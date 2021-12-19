@@ -17,11 +17,11 @@ class ChatScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          FirebaseFirestore.instance
+          Firestore.instance
               .collection('chats/oZOF1M3giWMSVvxozXai/messages')
               .snapshots()
               .listen((data) {
-            print(data);
+            print(data.documents[0]['text']);
           });
         },
       ),
