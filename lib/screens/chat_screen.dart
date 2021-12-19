@@ -21,7 +21,9 @@ class ChatScreen extends StatelessWidget {
               .collection('chats/oZOF1M3giWMSVvxozXai/messages')
               .snapshots()
               .listen((data) {
-            print(data.documents[0]['text']);
+            data.documents.forEach((document) {
+              print(document['text']);
+            });
           });
         },
       ),
