@@ -15,11 +15,12 @@ class ChatScreen extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           }
+          final documents = streamSnapshot.data.documents;
           return ListView.builder(
-            itemCount: streamSnapshot.data.documents.length,
+            itemCount: documents.length,
             itemBuilder: (ctx, index) => Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('This works!'),
+              child: Text(documents[index]['text']),
             ),
           );
         },
