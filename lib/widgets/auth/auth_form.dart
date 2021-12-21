@@ -13,10 +13,14 @@ class _AuthFormState extends State<AuthForm> {
 
   void _trySubmit() {
     final isValid = _formKey.currentState.validate();
+    FocusScope.of(context).unfocus();
     
 
     if (isValid) {
       _formKey.currentState.save();
+      print(_userEmail);
+      print(_userName);
+      print(_userPassword);
 
       //Use the values to send auth request
     }
@@ -78,7 +82,7 @@ class _AuthFormState extends State<AuthForm> {
                   SizedBox(height: 12),
                   RaisedButton(
                     child: Text('Login'),
-                    onPressed: () {},
+                    onPressed: _trySubmit,
                   ),
                   FlatButton(
                     textColor: Theme.of(context).primaryColor,
