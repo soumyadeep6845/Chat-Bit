@@ -7,9 +7,10 @@ class AuthForm extends StatefulWidget {
 
 class _AuthFormState extends State<AuthForm> {
   final _formKey = GlobalKey<FormState>();
-  String _userEmail = '';
-  String _userName = '';
-  String _userPassword = '';
+  var _isLogin = true; 
+  var _userEmail = '';
+  var _userName = '';
+  var _userPassword = '';
 
   void _trySubmit() {
     final isValid = _formKey.currentState.validate();
@@ -40,6 +41,7 @@ class _AuthFormState extends State<AuthForm> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   TextFormField(
+                    key: ValueKey('email'),
                     validator: (value) {
                       if (value.isEmpty || !value.contains('@')) {
                         return 'Please enter a valid email address!';
@@ -54,7 +56,9 @@ class _AuthFormState extends State<AuthForm> {
                       _userEmail = value;
                     },
                   ),
+                  if (_isLogin)
                   TextFormField(
+                    key: ValueKey('username'),
                     validator: (value) {
                       if (value.isEmpty || value.length < 4) {
                         return 'Username must be atleast 4 characters long.';
@@ -67,6 +71,7 @@ class _AuthFormState extends State<AuthForm> {
                     },
                   ),
                   TextFormField(
+                    key: ValueKey('password'),
                     validator: (value) {
                       if (value.isEmpty || value.length < 7) {
                         return 'Password must be atleast 7 characters long.'  ;
@@ -81,13 +86,17 @@ class _AuthFormState extends State<AuthForm> {
                   ),
                   SizedBox(height: 12),
                   RaisedButton(
-                    child: Text('Login'),
+                    child: Text(_isLogin ? 'Login' : 'Signup'),
                     onPressed: _trySubmit,
                   ),
                   FlatButton(
                     textColor: Theme.of(context).primaryColor,
-                    child: Text('Create new account'),
-                    onPressed: () {},
+                    child: Text(_isLogin ? 'Create new account' : 'I already have an account'),
+                    onPressed: () {
+                      setState(() {
+                        _isLogin = !_isLogin;
+                      });
+                    },
                   ),
                 ],
               ),
