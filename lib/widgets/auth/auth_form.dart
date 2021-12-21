@@ -6,6 +6,22 @@ class AuthForm extends StatefulWidget {
 }
 
 class _AuthFormState extends State<AuthForm> {
+  final _formKey = GlobalKey<FormState>();
+  String _userEmail = '';
+  String _userName = '';
+  String _userPassword = '';
+
+  void _trySubmit() {
+    final isValid = _formKey.currentState.validate();
+    
+
+    if (isValid) {
+      _formKey.currentState.save();
+
+      //Use the values to send auth request
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -15,6 +31,7 @@ class _AuthFormState extends State<AuthForm> {
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Form(
+              key: _formKey,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -29,6 +46,9 @@ class _AuthFormState extends State<AuthForm> {
                     decoration: InputDecoration(
                       labelText: 'Email address',
                     ),
+                    onSaved: (value) {
+                      _userEmail = value;
+                    },
                   ),
                   TextFormField(
                     validator: (value) {
@@ -38,6 +58,9 @@ class _AuthFormState extends State<AuthForm> {
                       return null;
                     },
                     decoration: InputDecoration(labelText: 'Username'),
+                    onSaved: (value) {
+                      _userName = value;
+                    },
                   ),
                   TextFormField(
                     validator: (value) {
@@ -48,6 +71,9 @@ class _AuthFormState extends State<AuthForm> {
                     },
                     decoration: InputDecoration(labelText: 'Password'),
                     obscureText: true,
+                    onSaved: (value) {
+                      _userPassword = value;
+                    },
                   ),
                   SizedBox(height: 12),
                   RaisedButton(
