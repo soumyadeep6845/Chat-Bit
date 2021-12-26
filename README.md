@@ -1,16 +1,62 @@
-# chat_app
+# Chat Bit
 
-A new Flutter project.
+<p align="center">
+   <img src="web/banner.gif" alt="Logo"/>
+</p>
+<!-- PROJECT LOGO -->
 
-## Getting Started
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-This project is a starting point for a Flutter application.
+<!-- ABOUT THE PROJECT -->
+## Built With
 
-A few resources to get you started if this is your first Flutter project:
+<p align="left">
+   <img alt="Dart" src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white"/>
+   <img alt="Flutter" src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white"/>
+   <img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/>
+</p>  
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🔥 Screenshots
+
+| Mockup-1 |
+| - |
+| ![img/grid_image1.png](img/grid_image1.png) |
+
+<!-- BUILT WITH -->  
+
+## How to Install Locally
+
+**1. Fork and clone this repository using**
+
+   ```
+   git clone https://github.com/sandip2224/<Repository_Name>.git
+   cd <Repository_Name>/
+   ```  
+
+> Add necessary steps to get your project up and running locally  
+
+**2.**  
+
+**3.**  
+
+**4.**
+
+---
+
+## License
+
+Distributed under the _NAME_ License. See `LICENSE` for more information.  
+
+
+## Contributing
+
+If you'd like to contribute, please **fork** the repository and then raise a PR with necessary changes. Thank you.
+
+---
+
+## Found this project interesting?
+
+If you found this project useful, then please consider leaving a :star: on Github
