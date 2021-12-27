@@ -1,4 +1,4 @@
-# Chat Bit
+# Chat Bit 💭
 
 <p align="center">
    <img src="web/banner.gif" alt="Logo"/>
@@ -9,54 +9,83 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Built With
+* **Frontend**
+   -  Flutter
+   -  Dart
 
-<p align="left">
-   <img alt="Dart" src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white"/>
-   <img alt="Flutter" src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white"/>
-   <img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/>
-</p>  
+* **Backend & Libraries**
+   -  Firebase Auth
+   -  Cloud Firestore
+   -  Firebase Storage
+   -  Image Picker
 
-
+*  **Database**
+   -  Firebase
 ---
 
-## 🔥 Screenshots
+## ✨ Screenshots
 
-| Mockup-1 |
+| Authentication Screen |
 | - |
-| ![img/grid_image1.png](img/grid_image1.png) |
+| ![web/AuthScreen.png](web/AuthScreen.png) |
+
+| Chat Homescreen (User-1) |
+| - |
+| ![web/Chatscreen1.png](web/Chatscreen1.png) |
+
+| Chat Homescreen (User-2) |
+| - |
+| ![web/Chatscreen2.png](web/Chatscreen2.png) |
 
 <!-- BUILT WITH -->  
 
-## How to Install Locally
+## 📲 How to Install Locally
 
 **1. Fork and clone this repository using**
 
    ```
-   git clone https://github.com/sandip2224/<Repository_Name>.git
+   git clone https://github.com/soumyadeep6845/<Repository_Name>.git
    cd <Repository_Name>/
    ```  
 
-> Add necessary steps to get your project up and running locally  
+**2. Install the required dependencies using**  
 
-**2.**  
+   ```
+   flutter packages get
+   ```
 
-**3.**  
+**3. Connect any android device/emulator.**  
 
-**4.**
+**4. Run and install the app, using**
+   
+   ```
+   flutter run
+   ```
 
+**5. In case of general runtime difficulties, run**
+   
+   ```
+   flutter clean
+   ```
+   and then,
+   
+   ```
+   flutter packages get
+   ```
 ---
 
-## License
-
-Distributed under the _NAME_ License. See `LICENSE` for more information.  
-
-
-## Contributing
+## 🎈 Contributing
 
 If you'd like to contribute, please **fork** the repository and then raise a PR with necessary changes. Thank you.
 
 ---
 
-## Found this project interesting?
+## 💚 Found this project interesting?
 
-If you found this project useful, then please consider leaving a :star: on Github
+If you found this project useful, then please consider leaving a :star: on Github. Thank you! 😄
+
+---
+
+## 👨 Project Maintained By-
+
+* [Soumyadeep Das](https://www.linkedin.com/in/soumya0021/)
