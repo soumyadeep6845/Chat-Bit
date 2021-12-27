@@ -29,13 +29,9 @@
 | - |
 | ![web/AuthScreen.png](web/AuthScreen.png) |
 
-| Chat Homescreen (User-1) |
-| - |
-| ![web/Chatscreen1.png](web/Chatscreen1.png) |
-
-| Chat Homescreen (User-2) |
-| - |
-| ![web/Chatscreen2.png](web/Chatscreen2.png) |
+| Chat Homescreen (User-1) | Chat Homescreen (User-2) |
+| - | - |
+| ![web/Chatscreen1.png](web/Chatscreen1.png) | ![web/Chatscreen2.png](web/Chatscreen2.png) |
 
 <!-- BUILT WITH -->  
 
@@ -44,8 +40,8 @@
 **1. Fork and clone this repository using**
 
    ```
-   git clone https://github.com/soumyadeep6845/<Repository_Name>.git
-   cd <Repository_Name>/
+   git clone https://github.com/soumyadeep6845/Chat-Bit.git
+   cd Chat-Bit/
    ```  
 
 **2. Install the required dependencies using**  
