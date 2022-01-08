@@ -69,6 +69,8 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:27.0.0')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.android.support:multidex:1.0.3'
+    apply plugin: 'com.google.firebase.crashlytics'
+    apply plugin: 'com.google.gms.google-services'
 }
 
 apply plugin: 'com.google.gms.google-services'
